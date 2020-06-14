@@ -1,0 +1,24 @@
+extends components/plantilla.pug
+block contenidos
+    main
+        section.gestion
+            .gestion__logo
+                img(src="./images/logo.svg", alt="", srcset="")
+            .gestion__iconos
+                +iconos('icon-document.svg')
+                +iconos('icon-folder.svg')
+                +iconos('icon-upload.svg')
+        section.avance
+            p.avance__parrafo 
+                | You've used 
+                span 815 GB
+                | of you storage
+            .avance__barra
+            .avance__consumo
+                p 0 GB
+                p 1000 GB
+        section
+            .avance__espacio
+                p 185
+                p gb
+                p left
