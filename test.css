@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.hero{
+    display: flex;
+    background-color: tomato;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gestion{
+    width: 50%;
+    border: 1px solid red;
+}
+.avance{
+
+    width: 50%;
+    border: 1px solid blue;
+}
+@media only screen and (min-width: 768px){
+    .hero{
+        flex-direction: row;
+    }
+    .gestion{
+        width: 100%;
+    }
+    .avance{
+        width: 100%;
+    }
+}

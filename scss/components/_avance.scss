@@ -1,0 +1,72 @@
+.avance{
+    margin-top: 15px;
+    @include caja(20px);
+    font-size: $letter_size;
+    color: $paleBlue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    span{
+        font-weight: 700;
+    }
+    
+    &__barra{
+        width: 100%;
+        padding: 6px;
+        background: $veryDarkBlue;
+        border-radius: 15px;
+
+        span{
+            display: block;
+            position: relative;
+            padding: 5px;
+            width: 80%;
+            background: linear-gradient(to right,$gradient);
+            border-radius: 15px;
+        &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            padding: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $paleBlue;
+            top: 0px;
+            right: 1px;
+        }
+        }
+    }
+    &__consumo{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-weight: 700;
+    }
+    &__espacio{
+        width: 150px;
+        position: absolute;
+        background-color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        bottom: -40px;
+        padding: 8px 20px;
+        border-radius: 10px;
+        p:first-child{
+            font-weight: 700;
+            color:$veryDarkBlue;
+            font-size: 2rem;
+        }
+        p{
+            margin: 0;
+            margin-right: 5px;
+            padding: 0;
+            align-self: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $grayishBlue;
+            font-size: 10px;
+        }
+    }
+}

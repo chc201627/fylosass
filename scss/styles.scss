@@ -1,5 +1,9 @@
+@import "lib/bootstrap_reboot";
+@import "lib/breakpoints";
 @import "lib/variables";
 @import "lib/font";
 @import "lib/globales";
+@import "lib/mixin";
 @import "components/main";
 @import "components/gestion";
+@import "components/avance";
