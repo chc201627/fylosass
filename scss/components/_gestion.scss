@@ -1,8 +1,13 @@
 .gestion{
-
-    @include caja(100px);
+    position: static;
+    @include caja(100px,300px,150px);
+    @include media (tablet){
+        margin-right: 15px;
+    }
     &__logo img{
-        width: 100px;
+    width: 100px;
+   
+
     }
     &__iconos{
         display: flex;
@@ -14,6 +19,7 @@
             margin-right: 10px;
             border-radius: 10px;
         }
+
         img{
             width: 20px;
  

@@ -1,14 +1,45 @@
 /*-----------------*\
  $MAIN AND HERO 
  \*-----------------*/
+ main{
+   @include media (tablet){
+    
+    max-width: 1440px;
+    height: 100vh;
+    background-color: $veryDarkBlue;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+    position: relative;
+   }
+    
+ }
+ .containter{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include media (tablet){
+        flex-direction: row; 
+        width: 100%;
+        height: 0vh;
+    }
+ }
  .hero{
      width: 100%;
      height: 100vh;
      background: url(../images/bg-mobile.svg) no-repeat center;
      background-size: cover;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
- }
+     
+
+    @include media (tablet){
+        
+        background: url(../images/bg-desktop.svg) no-repeat center;
+        background-size: cover;
+        height: 50vh;
+        flex-direction: row; 
+    }
+ }  
 

@@ -1,12 +1,15 @@
 .avance{
     margin-top: 15px;
-    @include caja(20px);
+    @include caja(20px,300px,150px);
     font-size: $letter_size;
     color: $paleBlue;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    @include media (tablet){
+        @include caja(20px,450px,130px);
+    }
     span{
         font-weight: 700;
     }
@@ -53,6 +56,21 @@
         bottom: -40px;
         padding: 8px 20px;
         border-radius: 10px;
+        @include media (tablet){
+            top: -40px;
+            bottom: 120px;
+            right: 30px;
+        &::after{
+            content:"";
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin: 29px 0px 0px 61px;
+    border-left: 27px solid transparent;
+    border-top: 26px solid white;
+        }
+        }
+        
         p:first-child{
             font-weight: 700;
             color:$veryDarkBlue;

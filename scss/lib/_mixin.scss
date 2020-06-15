@@ -1,6 +1,6 @@
-@mixin caja($borde) {
-    width: 300px;
-    height: 150px;
+@mixin caja($borde, $ancho, $alto) {
+    width: $ancho;
+    height: $alto;
     background-color: $darkBlue;
     padding: 30px;
     border-radius: 10px $borde 10px 10px;
